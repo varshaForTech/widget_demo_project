@@ -29,7 +29,7 @@ class _RxDartExampleState extends State<RxDartExample> {
         children: [
           StreamBuilder<String>(
             stream: countListener,
-            initialData: "",
+            initialData: "0",
             builder: (context, snapshot) {
               return Text(
                 "Stream Data -> ${snapshot.data}",
